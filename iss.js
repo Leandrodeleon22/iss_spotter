@@ -50,7 +50,14 @@ const fetchISSFlyOverTimes = function (coords, callback) {
   );
 };
 
-module.exports = { fetchMyIp, fetchCoordsByIp, fetchISSFlyOverTimes };
+const nextISSTimesForMyLocation = function (callback) {};
+
+module.exports = {
+  fetchMyIp,
+  fetchCoordsByIp,
+  fetchISSFlyOverTimes,
+  nextISSTimesForMyLocation,
+};
 
 //As input it expects a latitude/longitude pair, an altitude, and how many results to return. done
 //As output you get the same inputs back (for checking) and a time stamp when the API ran in addition to a success
